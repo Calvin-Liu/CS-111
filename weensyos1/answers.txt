@@ -1,0 +1,26 @@
+Name:Calvin Liu
+UCLA ID:804182525
+
+
+-------------------------------------------------------------------------------
+
+Response to Exercise 1:
+No because if you use sys_getpid() one time and start execution, it will save values onto the registers and the stack and then when it eventually runs again, the original registers might not necessarily contain the same values you want and thus can return a different process ID. 
+
+Response to Exercise 2:
+For do_fork(), I set the process to runnable, copy the registers through the struct, call the copy_stack function and make sure to set the child's eax register to 0. Then you want to return the process ID. 
+For the copy_stack() function, I represented the stack top by offsetting the start ofthe stack by the stack size of the source multiplied by the p_id of the array processes. The offset difference of the data you want to copy over would be the stack top - the stack bottom. The stack top of the dest should be the same as source, but instead of using the src pointer you would use the dest pointer. The dest stack bottom would be the dest stack top - the size of the data you are copying over. Then you want to copy the data using memcpy and point esp to the bottom of the dest stack so it is not pointing to the src stack bottom anymore. 
+
+Response to Exercise 3:
+I created a bool like statement in the struct to show whether or not the processis running. If it is 0 then the process is not waiting on anything. If it is waiting then the "bool" will be set to the process ID. 
+You want to set the exit status to be the exit_status of the current running process. 
+Then check to see if the process is waiting or not based upon what it is set to.
+Set the state to runnable and make the process the current processes eax only ifthe current process was waiting.
+
+Response to Exercise 4:
+I changed the code so that there would be no need to have P_ZOMBIE anymore and it would just be P_EMPTY instead because there would be no need to tell that the process is dead and instead just perform the clean up.
+
+Anything else you'd like us to know:
+
+
+Extra credit exercises:

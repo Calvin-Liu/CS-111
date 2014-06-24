@@ -1,0 +1,51 @@
+Name: Calvin Liu
+UCLA ID: 804182525
+
+-------------------------------------------------------------------------------
+
+Response to Exercise 1:
+
+The name of the scheduling algorithm is:
+Round Robin because 123412341234 keeps printing
+
+(Exercise 2 is a coding exercise)
+
+Response to Exercise 3:
+
+Average turnaround time for scheduling_algorithm 0:
+Process 1:1280-3 milliseconds
+Process 2:1280-2 milliseconds
+Process 3:1280-1 milliseconds
+Process 4:1280 milliseconds
+
+Average turnaround time for scheduling_algorithm 1:
+Process 1:320 milliseconds
+Process 2:320(2) milliseconds
+Process 3:320(3) milliseconds
+Process 4:320(4) milliseconds
+
+Average wait time for scheduling_algorithm 0:
+Process 1:0 milliseconds
+Process 2:1 milliseconds
+Process 3:2 milliseconds
+Process 4:3 milliseconds
+
+Average wait time for scheduling_algorithm 1:
+Process 1:0 milliseconds
+Process 2:320 milliseconds
+Process 3:640 milliseconds
+Process 4:960 milliseconds
+
+Exercise 4:
+
+Did you complete Exercise 4A or Exercise 4B?
+Exercise 4A
+
+Exercise 5:
+Process 4 because it is the first number missing in the output
+
+(Exercise 6 is a coding exercise)
+
+
+Anything else you'd like us to know:
+Tried to do the extra credit problems, 4b, 7, but couldn't. They should not interfere with compiling the other exercises though.

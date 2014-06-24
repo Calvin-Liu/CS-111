@@ -1,0 +1,18 @@
+Name:Calvin Liu
+UCLA ID:804182525
+
+
+-------------------------------------------------------------------------------
+
+Response to Exercise 1:
+No because if you use sys_getpid() one time, it will save values onto registers and then when it eventually runs again, the original registers might not necessarily contain the same values you want and thus can return a different process ID. 
+
+Response to Exercise 3:
+I created a bool like statement in the struct to show whether or not the process is running. 
+In INT_SYS_EXIT, I made a while loop to go from processes 1-15 and check to see which are waiting through the bool I put in the struct. If it is waiting, then I make it runnable and then change the state of it and break because I am only changing the state of 1 of it. You also want tochange the eax register to BLOCKED and change the process state to waiting once it is blocked. This should be done when you hit the else statement of the INT_SYS_WAIT statement. 
+
+Anything else you'd like us to know:
+
+
+
+Extra credit exercises:
