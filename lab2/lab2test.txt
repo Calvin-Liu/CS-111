@@ -1,0 +1,1 @@
+echo foobar | ./osprdaccess -w 6 ; (./osprdaccess -r 6 -l -d 0.2) &(./osprdaccess -r 6 -L 0.2 -d 0.2) &(echo xxxxxx | ./osprdaccess -w -L) ; sleep 0.6

@@ -1,0 +1,25 @@
+# Fill in your name, student ID, and email address in this file.
+
+# If you are working in a team, remove the # signs from the three lines for
+# partner 2 below and fill them in as well. Please submit the lab to CourseWeb
+# only once (from only one partner). This file will be automatically parsed in
+# order to give both team members credit for the lab.
+
+# If you have any other information you'd like us to know, please add it at
+# the end of the file.
+
+# Partner 1
+Name: Calvin Liu
+Student ID: 804182525
+Email: CalvinLiu411@gmail.com
+
+# Partner 2
+Name: Jonathan Ong
+Student ID: 104135858
+Email: 
+
+# Add any other information you'd like us to have below this line.
+
+The test cases were not constant and sometimes I had to run the 
+qemu multiple times because it did not reproduce the terminal correctly. 
+
